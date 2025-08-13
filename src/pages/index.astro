@@ -29,7 +29,7 @@ const recentPosts = sortedPosts.filter(({ data }) => !data.featured);
       </h1>
       <a
         target="_blank"
-        href="/rss.xml"
+        href="./rss.xml"
         class="inline-block"
         aria-label="rss feed"
         title="RSS Feed"
@@ -37,7 +37,7 @@ const recentPosts = sortedPosts.filter(({ data }) => !data.featured);
         <IconRss
           width={20}
           height={20}
-          class="scale-125 stroke-accent stroke-3 rtl:-rotate-90"
+          class="scale-125 stroke-accent stroke-3"
         />
         <span class="sr-only">RSS Feed</span>
       </a>
@@ -61,7 +61,7 @@ const recentPosts = sortedPosts.filter(({ data }) => !data.featured);
         // only display if at least one social link is enabled
         SOCIALS.length > 0 && (
           <div class="mt-4 flex flex-col sm:flex-row sm:items-center">
-            <div class="me-2 mb-1 whitespace-nowrap sm:mb-0">Social Links:</div>
+            <div class="mr-2 mb-1 whitespace-nowrap sm:mb-0">Social Links:</div>
             <Socials />
           </div>
         )
@@ -101,9 +101,9 @@ const recentPosts = sortedPosts.filter(({ data }) => !data.featured);
     }
 
     <div class="my-8 text-center">
-      <LinkButton href="/posts/">
+      <LinkButton href="./posts/">
         All Posts
-        <IconArrowRight class="inline-block rtl:-rotate-180" />
+        <IconArrowRight class="inline-block" />
       </LinkButton>
     </div>
   </main>

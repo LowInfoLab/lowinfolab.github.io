@@ -1,4 +1,3 @@
-import type { Props } from "astro";
 import IconMail from "@/assets/icons/IconMail.svg";
 import IconGitHub from "@/assets/icons/IconGitHub.svg";
 import IconBrandX from "@/assets/icons/IconBrandX.svg";
@@ -9,41 +8,28 @@ import IconTelegram from "@/assets/icons/IconTelegram.svg";
 import IconPinterest from "@/assets/icons/IconPinterest.svg";
 import { SITE } from "@/config";
 
-interface Social {
-  name: string;
-  href: string;
-  linkTitle: string;
-  icon: (_props: Props) => Element;
-}
-
-export const SOCIALS: Social[] = [
+export const SOCIALS = [
   {
-    name: "GitHub",
-    href: "https://github.com/satnaing/astro-paper",
-    linkTitle: `${SITE.title} on GitHub`,
+    name: "Github",
+    href: "https://github.com/tmokmss",
+    linkTitle: ` ${SITE.title} on Github`,
     icon: IconGitHub,
   },
   {
     name: "X",
-    href: "https://x.com/username",
+    href: "https://twitter.com/tmokmss",
     linkTitle: `${SITE.title} on X`,
     icon: IconBrandX,
   },
   {
     name: "LinkedIn",
-    href: "https://www.linkedin.com/in/username/",
+    href: "https://www.linkedin.com/in/masashi-tomooka-7782a81b0/",
     linkTitle: `${SITE.title} on LinkedIn`,
     icon: IconLinkedin,
   },
-  {
-    name: "Mail",
-    href: "mailto:yourmail@gmail.com",
-    linkTitle: `Send an email to ${SITE.title}`,
-    icon: IconMail,
-  },
 ] as const;
 
-export const SHARE_LINKS: Social[] = [
+export const SHARE_LINKS = [
   {
     name: "WhatsApp",
     href: "https://wa.me/?text=",

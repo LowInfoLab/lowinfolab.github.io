@@ -14,7 +14,6 @@ import { SITE } from "@/config";
 import { SOCIALS } from "@/constants";
 import "@/styles/global.css";
 
-
 const posts = await getCollection("blog");
 
 const sortedPosts = getSortedPosts(posts);
@@ -25,7 +24,7 @@ const recentPosts = sortedPosts.filter(({ data }) => !data.featured);
 <Layout>
   <Header />
   <main id="main-content" data-layout="index">
-    <section id="hero" class="pb-6 pt-8">
+    <section id="hero" class="pt-8 pb-6">
       <h1 class="my-4 inline-block text-4xl font-bold sm:my-8 sm:text-5xl">
         Mingalaba
       </h1>
@@ -39,7 +38,7 @@ const recentPosts = sortedPosts.filter(({ data }) => !data.featured);
         <IconRss
           width={20}
           height={20}
-          class="stroke-accent stroke-3 scale-125"
+          class="scale-125 stroke-accent stroke-3"
         />
         <span class="sr-only">RSS Feed</span>
       </a>
@@ -53,7 +52,7 @@ const recentPosts = sortedPosts.filter(({ data }) => !data.featured);
       <p class="mt-2">
         Read the blog posts or check
         <LinkButton
-          class="hover:text-accent underline decoration-dashed underline-offset-4"
+          class="underline decoration-dashed underline-offset-4 hover:text-accent"
           href="https://github.com/satnaing/astro-paper#readme"
         >
           README
@@ -63,7 +62,7 @@ const recentPosts = sortedPosts.filter(({ data }) => !data.featured);
         // only display if at least one social link is enabled
         SOCIALS.length > 0 && (
           <div class="mt-4 flex flex-col sm:flex-row sm:items-center">
-            <div class="mb-1 mr-2 whitespace-nowrap sm:mb-0">Social Links:</div>
+            <div class="mr-2 mb-1 whitespace-nowrap sm:mb-0">Social Links:</div>
             <Socials />
           </div>
         )
@@ -75,7 +74,7 @@ const recentPosts = sortedPosts.filter(({ data }) => !data.featured);
     {
       featuredPosts.length > 0 && (
         <>
-          <section id="featured" class="pb-6 pt-12">
+          <section id="featured" class="pt-12 pb-6">
             <h2 class="text-2xl font-semibold tracking-wide">Featured</h2>
             <ul>
               {featuredPosts.map(data => (
@@ -90,7 +89,7 @@ const recentPosts = sortedPosts.filter(({ data }) => !data.featured);
 
     {
       recentPosts.length > 0 && (
-        <section id="recent-posts" class="pb-6 pt-12">
+        <section id="recent-posts" class="pt-12 pb-6">
           <h2 class="text-2xl font-semibold tracking-wide">Recent Posts</h2>
           <ul>
             {recentPosts.map(

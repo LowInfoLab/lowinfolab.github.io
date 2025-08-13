@@ -9,7 +9,7 @@ import { SITE } from "./src/config";
 export default defineConfig({
   site: SITE.website,
   base: SITE.base,
-  trailingSlash: 'always',
+  trailingSlash: "always",
   integrations: [
     sitemap({
       filter: page => SITE.showArchives || !page.endsWith("/archives"),

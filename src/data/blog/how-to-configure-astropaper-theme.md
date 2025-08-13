@@ -116,7 +116,7 @@ You might want to use this option if you want to use an SVG logo.
   ```html
   <a
     href="/"
-    class="absolute py-1 text-left text-2xl leading-7 font-semibold whitespace-nowrap sm:static"
+    class="absolute whitespace-nowrap py-1 text-left text-2xl font-semibold leading-7 sm:static"
   >
     <DummyLogo class="scale-75 dark:invert" />
     <!-- {SITE.title} -->
@@ -145,7 +145,7 @@ If your logo is an image but not SVG, you can use Astro's Image component.
   ```html
   <a
     href="/"
-    class="absolute py-1 text-left text-2xl leading-7 font-semibold whitespace-nowrap sm:static"
+    class="absolute whitespace-nowrap py-1 text-left text-2xl font-semibold leading-7 sm:static"
   >
     <image src="{dummyLogo}" alt="Dummy Blog" class="dark:invert" />
     <!-- {SITE.title} -->

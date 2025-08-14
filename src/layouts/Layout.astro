@@ -129,6 +129,13 @@ const structuredData = {
     <!-- Google tag (gtag.js) -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-86SEZMVW9T"
     ></script>
+
+    <ClientRouter />
+
+    <script is:inline src="/toggle-theme.js"></script>
+  </head>
+  <body>
+    <slot />
     <script is:inline>
       window.dataLayer = window.dataLayer || [];
       function gtag(...args) {
@@ -138,13 +145,6 @@ const structuredData = {
 
       gtag("config", "G-86SEZMVW9T");
     </script>
-
-    <ClientRouter />
-
-    <script is:inline src="/toggle-theme.js"></script>
-  </head>
-  <body>
-    <slot />
   </body>
 </html>
 

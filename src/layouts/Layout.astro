@@ -136,13 +136,13 @@ const structuredData = {
   </head>
   <body>
     <slot />
+    <!-- Inline Google Analytics setup -->
     <script is:inline>
       window.dataLayer = window.dataLayer || [];
-      function gtag(...args) {
-        window.dataLayer.push(args);
+      function gtag() {
+        dataLayer.push(arguments);
       }
       gtag("js", new Date());
-
       gtag("config", "G-86SEZMVW9T");
     </script>
   </body>

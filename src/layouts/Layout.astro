@@ -130,7 +130,9 @@ const structuredData = {
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-86SEZMVW9T"></script>
     <script is:inline>
       window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
+      function gtag(...args) {
+        window.dataLayer.push(args);
+      }
       gtag('js', new Date());
 
       gtag('config', 'G-86SEZMVW9T');

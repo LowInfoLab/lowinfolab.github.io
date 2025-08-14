@@ -1,6 +1,5 @@
 export const SITE = {
   website: "https://tmokmss.github.io", // replace this with your deployed domain
-  base: "blog/",
   author: "Masashi Tomooka",
   profile: "https://github.com/tmokmss",
   desc: "A tech blog from a Cloud enthusiast.",
@@ -14,7 +13,7 @@ export const SITE = {
   showBackButton: true, // show back button in post detail
   editPost: {
     enabled: true,
-    text: "Suggest Changes",
+    text: "Edit page",
     url: "https://github.com/tmokmss/blog/edit/main/",
   },
   dynamicOgImage: true,

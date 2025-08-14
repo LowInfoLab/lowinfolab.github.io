@@ -126,10 +126,19 @@ const structuredData = {
       )
     }
 
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-86SEZMVW9T"></script>
+    <script is:inline>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'G-86SEZMVW9T');
+    </script>
+
     <ClientRouter />
 
-    <script is:inline src={`${import.meta.env.BASE_URL}/toggle-theme.js`}
-    ></script>
+    <script is:inline src='/toggle-theme.js'></script>
   </head>
   <body>
     <slot />

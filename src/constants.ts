@@ -1,5 +1,4 @@
 import IconMail from "@/assets/icons/IconMail.svg";
-import IconGitHub from "@/assets/icons/IconGitHub.svg";
 import IconBrandX from "@/assets/icons/IconBrandX.svg";
 import IconSubstack from "@/assets/icons/IconSubstack.svg";
 import IconWhatsapp from "@/assets/icons/IconWhatsapp.svg";

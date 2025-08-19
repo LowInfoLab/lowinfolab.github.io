@@ -5,10 +5,10 @@ import tailwindcss from "@tailwindcss/vite";
 import { defineConfig } from "astro/config";
 import tailwindcss from "@tailwindcss/vite";
 import sitemap from "@astrojs/sitemap";
-
+import { SITE } from "./src/config";
 
 export default defineConfig({
-  site: "https://lowinfolab.com",
+  site: SITE.website,
   base: "/",
   trailingSlash: "always",
   integrations: [

@@ -14,13 +14,6 @@ export default defineConfig({
       filter: page => SITE.showArchives || !page.endsWith("/archives"),
     }),
   ],
-  markdown: {
-    remarkPlugins: [remarkToc, [remarkCollapse, { test: "Table of contents" }]],
-    shikiConfig: {
-      themes: { light: "min-light", dark: "night-owl" },
-      wrap: true,
-    },
-  },
   vite: {
     plugins: [tailwindcss()],
     optimizeDeps: {

@@ -1,7 +1,7 @@
 import IconMail from "@/assets/icons/IconMail.svg";
 import IconGitHub from "@/assets/icons/IconGitHub.svg";
 import IconBrandX from "@/assets/icons/IconBrandX.svg";
-import IconLinkedin from "@/assets/icons/IconLinkedin.svg";
+import IconSubstack from "@/assets/icons/IconSubstack.svg";
 import IconWhatsapp from "@/assets/icons/IconWhatsapp.svg";
 import IconFacebook from "@/assets/icons/IconFacebook.svg";
 import IconTelegram from "@/assets/icons/IconTelegram.svg";
@@ -10,22 +10,10 @@ import { SITE } from "@/config";
 
 export const SOCIALS = [
   {
-    name: "Github",
-    href: "https://github.com/tmokmss",
-    linkTitle: ` ${SITE.title} on Github`,
-    icon: IconGitHub,
-  },
-  {
-    name: "X",
-    href: "https://twitter.com/tmokmss",
-    linkTitle: `${SITE.title} on X`,
-    icon: IconBrandX,
-  },
-  {
-    name: "LinkedIn",
-    href: "https://www.linkedin.com/in/masashi-tomooka-7782a81b0/",
-    linkTitle: `${SITE.title} on LinkedIn`,
-    icon: IconLinkedin,
+    name: "Substack",
+    href: "https://substack.com/@lowinfolab",
+    linkTitle: `${SITE.title} on Substack`,
+    icon: IconSubstack,
   },
 ] as const;
 

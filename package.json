@@ -10,7 +10,9 @@
     "astro": "astro",
     "format:check": "prettier --check .",
     "format": "prettier --write .",
-    "lint": "eslint ."
+    "lint": "eslint .",
+    "publish:check": "node scripts/publish-scheduled-posts.js --dry-run",
+    "publish:run": "node scripts/publish-scheduled-posts.js"
   },
   "dependencies": {
     "@astrojs/rss": "^4.0.12",
@@ -19,7 +21,9 @@
     "@tailwindcss/vite": "^4.1.11",
     "astro": "^5.12.0",
     "dayjs": "^1.11.13",
+    "gray-matter": "^4.0.3",
     "lodash.kebabcase": "^4.1.1",
+    "luxon": "^3.7.1",
     "remark-collapse": "^0.1.2",
     "remark-toc": "^9.0.0",
     "satori": "^0.15.2",

@@ -1,11 +1,11 @@
 export const SITE = {
-  website: "https://tmokmss.github.io", // replace this with your deployed domain
-  base: "blog/",
-  author: "Masashi Tomooka",
-  profile: "https://github.com/tmokmss",
-  desc: "A tech blog from a Cloud enthusiast.",
-  title: "AstroPaper",
-  ogImage: "astropaper-og.jpg",
+  website: "https://lowinfolab.com", // replace this with your deployed domain
+  base: "blog",
+  author: "LowInfoLab",
+  profile: "https://github.com/LowInfoLab",
+  desc: "A blog exploring digital minimalism, the low information diet, and ideas for reducing information overload.",
+  title: "LowInfoLab",
+  ogImage: "",
   lightAndDarkMode: true,
   postPerIndex: 4,
   postPerPage: 4,
@@ -13,11 +13,11 @@ export const SITE = {
   showArchives: true,
   showBackButton: true, // show back button in post detail
   editPost: {
-    enabled: true,
+    enabled: false,
     text: "Edit page",
-    url: "https://github.com/tmokmss/blog/edit/main/",
+    url: "https://github.com/lowinfolab.github.io/blog/edit/main/",
   },
   dynamicOgImage: true,
   lang: "en", // html lang code. Set this empty and default will be "en"
-  timezone: "Asia/Tokyo", // Default global timezone (IANA format) https://en.wikipedia.org/wiki/List_of_tz_database_time_zones
+  timezone: "America/Toronto", // Default global timezone (IANA format) https://en.wikipedia.org/wiki/List_of_tz_database_time_zones
 } as const;

@@ -5,7 +5,7 @@ pubDatetime: 2025-08-01T12:00:00Z
 title: "The Low Information Diet: Your Blueprint for Digital Minimalism"
 slug: the-low-information-diet-your-blueprint-for-digital-minimalism
 featured: true
-draft: true
+draft: false
 tags:
   - guide
   - low information diet

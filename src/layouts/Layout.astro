@@ -56,7 +56,7 @@ const structuredData = {
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <link rel="canonical" href={canonicalURL} />
     <meta name="generator" content={Astro.generator} />
-    <link rel="alternate" type="application/rss+xml" title="LowInfoLab RSS Feed" href="/rss.xml" />
+
     <!-- General Meta Tags -->
     <title>{title}</title>
     <meta name="title" content={title} />
@@ -107,8 +107,8 @@ const structuredData = {
     <link
       rel="alternate"
       type="application/rss+xml"
-      title={SITE.title}
-      href={new URL("rss.xml", Astro.site)}
+      title="LowInfoLab RSS Feed"
+      href="https://lowinfolab.com/rss.xml"
     />
 
     <meta name="theme-color" content="" />

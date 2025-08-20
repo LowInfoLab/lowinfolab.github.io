@@ -5,6 +5,7 @@ import IconWhatsapp from "@/assets/icons/IconWhatsapp.svg";
 import IconFacebook from "@/assets/icons/IconFacebook.svg";
 import IconTelegram from "@/assets/icons/IconTelegram.svg";
 import IconPinterest from "@/assets/icons/IconPinterest.svg";
+import IconFeedly from "@/assets/icons/IconFeedly.svg";
 import { SITE } from "@/config";
 
 export const SOCIALS = [
@@ -13,6 +14,12 @@ export const SOCIALS = [
     href: "https://substack.com/@lowinfolab",
     linkTitle: `${SITE.title} on Substack`,
     icon: IconSubstack,
+  },
+  {
+    name: "Feedly",
+    href: "https://feedly.com/i/my/me",
+    linkTitle: `${SITE.title} on Feedly`,
+    icon: IconFeedly,
   },
 ] as const;
 

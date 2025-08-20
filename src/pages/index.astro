@@ -44,19 +44,16 @@ const recentPosts = sortedPosts.filter(({ data }) => !data.featured);
       </a>
 
       <p>
-        LowInfoLab is dedicated to exploring digital minimalism and the benefits
-        of consuming less, but more meaningful information. Inspired by low
-        information diet, I share ideas, tools, and my own personal experiences,
-        that help me reduce information overload in a world full of digital
-        distractions.
+        Dedicated to exploring digital minimalism and the benefits of consuming
+        less, but more meaningful information. Inspired by the low information
+        diet, I share ideas, tools, and my own personal experiences, that help
+        me reduce information overload in a world full of digital distractions.
       </p>
       {
         // only display if at least one social link is enabled
         SOCIALS.length > 0 && (
           <div class="mt-4 flex flex-col sm:flex-row sm:items-center">
-            <div class="me-2 mb-1 whitespace-nowrap sm:mb-0">
-              Find me on Substack:
-            </div>
+            <div class="me-2 mb-1 whitespace-nowrap sm:mb-0">Find me on:</div>
             <Socials />
           </div>
         )

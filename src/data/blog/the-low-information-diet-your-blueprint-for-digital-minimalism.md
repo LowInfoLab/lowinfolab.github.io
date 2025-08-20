@@ -44,9 +44,9 @@ When you are always plugged in, the effects accumulate slowly — but powerfully
 
 This isn’t just inconvenient — it’s damaging. Information overload can lead to **decision fatigue**, lower creativity, increased stress, and even reduced emotional resilience. To see how this plays out in everyday life, read more about [decision fatigue in the digital age](../posts/decision-fatigue-digital-age).
 
-![A girl reading about digital minimalism](@/assets/images/digital_minimalism.jpg)
-
 ## How to Begin Your Own Low Information Diet
+
+![A girl reading about digital minimalism](@/assets/images/digital_minimalism.jpg)
 
 Digital minimalism doesn’t require disappearing from the internet. It simply asks you to engage **deliberately**. Here’s how to start.
 

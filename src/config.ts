@@ -3,7 +3,7 @@ export const SITE = {
   base: "blog",
   author: "LowInfoLab",
   profile: "https://github.com/LowInfoLab",
-  desc: "A blog exploring digital minimalism, the low information diet, and ideas for reducing information overload.",
+  desc: "Exploring digital minimalism, the low information diet, and ideas for reducing information overload.",
   title: "LowInfoLab",
   ogImage: "",
   lightAndDarkMode: true,

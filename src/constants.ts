@@ -21,6 +21,12 @@ export const SOCIALS = [
     linkTitle: `${SITE.title} on Feedly`,
     icon: IconFeedly,
   },
+  {
+    name: "X",
+    href: "https://x.com/LowInfoLab",
+    linkTitle: `${SITE.title} on X`,
+    icon: IconBrandX,
+  },
 ] as const;
 
 export const SHARE_LINKS = [

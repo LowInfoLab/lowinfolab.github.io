@@ -46,14 +46,14 @@ const recentPosts = sortedPosts.filter(({ data }) => !data.featured);
       <p>
         Dedicated to exploring digital minimalism and the benefits of consuming
         less but more meaningful information. Inspired by the low information
-        diet, I share ideas and tools from my own experience that help reduce
+        diet, we share ideas and tools from our own experiences that help reduce
         information overload in a world full of digital distractions.
       </p>
       {
         // only display if at least one social link is enabled
         SOCIALS.length > 0 && (
           <div class="mt-4 flex flex-col sm:flex-row sm:items-center">
-            <div class="me-2 mb-1 whitespace-nowrap sm:mb-0">Find me on:</div>
+            <div class="me-2 mb-1 whitespace-nowrap sm:mb-0">Find us on:</div>
             <Socials />
           </div>
         )

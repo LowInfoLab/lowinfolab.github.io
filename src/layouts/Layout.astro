@@ -53,7 +53,44 @@ const structuredData = {
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width" />
-    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+
+    <!-- Favicon for Light and Dark Mode (ICO format) -->
+    <link
+      rel="icon"
+      href="/favicon-light.ico"
+      media="(prefers-color-scheme: light)"
+    />
+    <link
+      rel="icon"
+      href="/favicon-dark.ico"
+      media="(prefers-color-scheme: dark)"
+    />
+
+    <!-- Favicon for Light and Dark Mode (SVG format) -->
+    <link
+      rel="icon"
+      href="/favicon-light.svg"
+      media="(prefers-color-scheme: light)"
+    />
+    <link
+      rel="icon"
+      href="/favicon-dark.svg"
+      media="(prefers-color-scheme: dark)"
+    />
+
+    <!-- Apple Touch Icon for Light and Dark Mode (iOS format) -->
+    <link
+      rel="apple-touch-icon"
+      href="/apple-touch-icon-light.png"
+      media="(prefers-color-scheme: light)"
+    />
+    <link
+      rel="apple-touch-icon"
+      href="/apple-touch-icon-dark.png"
+      media="(prefers-color-scheme: dark)"
+    />
+
+    <!-- Default Favicon for Browsers Without Media Query Support -->
     <link rel="canonical" href={canonicalURL} />
     <meta name="generator" content={Astro.generator} />
 

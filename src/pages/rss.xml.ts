@@ -14,7 +14,9 @@ export async function GET() {
     site: SITE.website,
     xmlns: { media: "http://search.yahoo.com/mrss/" }, // needed for <media:content>
     items: sortedPosts.map(({ data, id, filePath }) => {
-      const imageUrl = data.coverImage ? `${SITE.website}${data.coverImage}` : null;
+      const imageUrl = data.coverImage
+        ? `${SITE.website}${data.coverImage}`
+        : null;
 
       return {
         link: getPath(id, filePath),

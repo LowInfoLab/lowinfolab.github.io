@@ -32,13 +32,9 @@ jobs:
 
       - run: pnpm install
 
-      - run: pnpm run astro:check
+      - run: pnpm run lint
 
-      - run: pnpm run astro:build
-
-      - run: pnpm exec pagefind --site dist --verbose
-      
-      - run: mkdir -p public && cp -r dist/pagefind public/
+      - run: pnpm run format:check
 
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3

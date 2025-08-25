@@ -1,4 +1,5 @@
 ---
+coverImage: "/images/focus_friend.jpg"
 author: LowInfoLab
 pubDatetime: 2025-09-17T12:00:00Z
 title: "The Creativity Comeback"

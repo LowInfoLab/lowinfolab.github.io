@@ -1,11 +1,11 @@
 ---
-image: "/images/information_overload.jpg"
+coverImage: "/images/information_overload.jpg"
 author: LowInfoLab
 pubDatetime: 2025-08-01T12:00:00Z
 title: "The Low Information Diet: Your Blueprint for Digital Minimalism"
 slug: the-low-information-diet-your-blueprint-for-digital-minimalism
-featured: true
-draft: false
+featured: false
+draft: true
 tags:
   - guide
   - low information diet

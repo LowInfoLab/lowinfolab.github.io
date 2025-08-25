@@ -10,17 +10,19 @@ export interface Props extends CollectionEntry<"blog"> {
 
 const { variant = "h2", data, id, filePath } = Astro.props;
 
-const { coverImage, title, description, pubDatetime, modDatetime, timezone } = data;
+const { coverImage, title, description, pubDatetime, modDatetime, timezone } =
+  data;
 
 const headerProps = {
   style: { viewTransitionName: slugifyStr(title) },
   class: "text-lg font-medium decoration-dashed hover:underline",
 };
 ---
+
 <div class="items-top mt-4 sm:flex">
-  <img src={coverImage} class="mr-4 sm:max-w-3xs mb-4">
+  <img src={coverImage} class="mr-4 mb-4 sm:max-w-3xs" />
   <li class="">
-    <a 
+    <a
       href={getPath(id, filePath)}
       class="inline-block text-lg font-medium text-accent decoration-dashed underline-offset-4 focus-visible:no-underline focus-visible:underline-offset-0"
     >
